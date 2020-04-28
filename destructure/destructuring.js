@@ -1,16 +1,19 @@
-const student = {
-    firstname: 'sharon',
-    lastname: 'kiwaiko',
-    country: ''
+const movie = {
+    title: 'The Invisible Guest',
+    ctg: 'Mystery',
+    year: '2016'
 };
+
+
+
 // Initialize local variables
-let country = 'israel';
-let firstname = '';
-let lastname = '';
-// Reassign firstname and lastname using destructuring
+let title = '';
+let ctg = '';
+let year = '';
+// Reassign ctg and lastname using destructuring
 // Enclose in a pair of parentheses, since this is an assignment expression
-({ firstname, lastname } = student);
+({ ctg, year } = movie);
 
 // country remains unchanged (Canada)
-console.log(firstname, lastname, country); // sharon kiwaiko israel
+console.log(title, ctg, year); // The Invisible Guest Mystery 2016
 //node destructuring
